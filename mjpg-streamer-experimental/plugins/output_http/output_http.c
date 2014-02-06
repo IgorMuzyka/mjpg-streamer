@@ -85,7 +85,7 @@ int output_init(output_parameter *param, int id)
 
     DBG("output #%02d\n", param->id);
 
-    port = htons(8080);
+    port = htons(9090);
     credentials = NULL;
     www_folder = NULL;
     nocommands = 0;

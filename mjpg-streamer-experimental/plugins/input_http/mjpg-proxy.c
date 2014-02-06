@@ -63,7 +63,7 @@ void init_extractor_state(struct extractor_state * state) {
 
 void init_mjpg_proxy(struct extractor_state * state){
 state->hostname = strdup("localhost");
-state->port = strdup("8080");
+state->port = strdup("9090");
 
 init_extractor_state(state);
 
@@ -136,7 +136,7 @@ fprintf(stderr, " --------------------------------------------------------------
                 " [-v | --version ]........: current SVN Revision\n" \
                 " [-h | --help]............: show this message\n"
                 " [-H | --host]............: select host to data from, localhost is default\n"
-                " [-p | --port]............: port, defaults to 8080\n"
+                " [-p | --port]............: port, defaults to 9090\n"
                 " ---------------------------------------------------------------\n", program_name);
 }
 // TODO: this must be reworked, too. I don't know how

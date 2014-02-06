@@ -7,10 +7,10 @@ This tool can be modified and distributed according to the terms of the GPL v2.
 Currently no issues are known, but since this software is quite young and not used widely it may cause problems. You must really know what you are doing, if you use this software. If you want to use the software you are obliged to check if the sourcecode does what you expect it to do and take the risk yourself to use it.
 
 To view the stream use VLC or Firefox and open the URL:
-http://127.0.0.1:8080/?action=stream
+http://127.0.0.1:9090/?action=stream
 
 To view a single JPEG just call:
-http://127.0.0.1:8080/?action=snapshot
+http://127.0.0.1:9090/?action=snapshot
 
 To compile and start the tool:
 # tar xzvf mjpg-streamer.tgz
@@ -47,7 +47,7 @@ Dependencies for the output plugin "output_autofocus.so":
  
 
 To play the HTTP M-JPEG stream with mplayer:
-# mplayer -fps 30 -demuxer lavf "http://127.0.0.1:8080/?action=stream&ignored.mjpg"
+# mplayer -fps 30 -demuxer lavf "http://127.0.0.1:9090/?action=stream&ignored.mjpg"
 
 It might be necessary to configure mplayer to prefer IPv4 instead of IPv6
 # vi ~./mplayer/config
